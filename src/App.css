@@ -1,38 +1,77 @@
-.App {
+body {
+  background: #1d1d1d;
+}
+
+.logo {
   text-align: center;
+  color: #fff;
+  font-size: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo span {
+  background: rgb(184,30,33);
+  background: linear-gradient(90deg, rgb(184, 30, 33) 0%, rgb(235, 129, 9) 16%, rgb(229, 176, 0) 35%, rgb(159, 187, 17) 55%, rgba(60,160,151,1) 76%, rgba(46,118,166,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.install {
+  max-width: 1220px;
+  width: 100%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.install input {
+  background-color: #151515;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.install__btn {
+  background-color: #151515;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 1220px;
+  width: 100%;
+  margin: auto;
+}
+
+.icon__item {
+  padding: 10px;
+  width: 180px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  font-size: 12px;
+  background-color: #151515;
+  color: #fff;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon__item svg {
+  width: 50px;
 }
